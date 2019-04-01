@@ -45,7 +45,11 @@ const Countdown = ({eventDate}) => {
   const timeRemaining = formatRemainingTime(millisecondsUntilEvent);
   return (
     <div>
-      {timeRemaining.days !== 0 ? timeRemaining.days + " jour" + (timeRemaining.days > 1 ? "s" : ""): ""}&nbsp;
+      {
+        timeRemaining.days !== 0 ?
+        (timeRemaining.days + "\xa0jour" + (timeRemaining.days > 1 ? "s" : "") + " ") :
+        ""
+      }
       {timeRemaining.hours}:
       {timeRemaining.minutes}:
       {timeRemaining.seconds}
