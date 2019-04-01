@@ -57,9 +57,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>Weekend à Bourboule</div>
+        <div>Weekend à la Bourboule</div>
         <Countdown
-          eventDate={new Date(2019, 3, 12, 9, 0, 0)}
+          eventDate={new Date(2019, 3, 12, 19, 33, 0)}
         />
       </div>
     );
